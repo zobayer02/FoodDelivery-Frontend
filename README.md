@@ -25,16 +25,17 @@ Welcome to "ZEST", a comprehensive food delivery system designed to streamline t
 
 ```
 ZEST/
-├── index.html              
+├── index.html
+├── styles/                 
+│   └── style.css           
+├── scripts/
+    └── script.js             
 ├── dashboard/              
 ├── restaurant-selection/   
 ├── food-selection/         
 ├── admin/                
 ├── employee/               
-├── manager/              
-├── styles/                 
-│   └── style.css           
-├── scripts/                
+├── manager/                             
 ├── assets/                
 └── README.md             
 ```
