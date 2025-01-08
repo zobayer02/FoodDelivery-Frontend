@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="employee_dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Employee Dashboard</h2>
+        <ul>
+            <li><a href="#" onclick="showSection('delivery-drivers')">Delivery Drivers/Riders</a></li>
+            <li><a href="#" onclick="showSection('customer-service')">Customer Service</a></li>
+            <li><a href="#" onclick="showSection('restaurant-liaison')">Restaurant Liaison/Account Managers</a></li>
+            <li><a href="#" onclick="showSection('operations-staff')">Operations Staff</a></li>
+            <li><a href="#" onclick="showSection('marketing-sales')">Marketing & Sales</a></li>
+            <li><a href="#" onclick="showSection('it-support')">IT & Technical Support</a></li>
+            <li><a href="#" onclick="showSection('quality-assurance')">Quality Assurance</a></li>
+            <li><a href="#" onclick="showSection('finance-accounting')">Finance & Accounting</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div id="delivery-drivers" class="section">
+            <h3>Delivery Drivers/Riders</h3>
+            <p><strong>Order Delivery:</strong> Pick up food orders from restaurants and deliver them to customers in a timely manner.</p>
+            <p><strong>Route Navigation:</strong> Use GPS apps to find the most efficient routes for deliveries.</p>
+            <p><strong>Customer Interaction:</strong> Ensure a positive customer experience during deliveries.</p>
+            <p><strong>Order Verification:</strong> Verify that the correct order is picked up and delivered, ensuring quality.</p>
+        </div>
+        <div id="customer-service" class="section">
+            <h3>Customer Service Representatives</h3>
+            <p><strong>Customer Support:</strong> Handle inquiries, complaints, and feedback from customers via phone, chat, or email.</p>
+            <p><strong>Issue Resolution:</strong> Resolve issues related to orders such as delays or incorrect items.</p>
+            <p><strong>Order Tracking:</strong> Provide customers with order status updates and estimated delivery times.</p>
+        </div>
+        <div id="restaurant-liaison" class="section">
+            <h3>Restaurant Liaison/Account Managers</h3>
+            <p><strong>Restaurant Onboarding:</strong> Help onboard new restaurants to the platform.</p>
+            <p><strong>Relationship Management:</strong> Maintain relationships with partner restaurants and address concerns.</p>
+            <p><strong>Performance Monitoring:</strong> Monitor restaurant performance metrics to ensure service quality.</p>
+        </div>
+        <div id="operations-staff" class="section">
+            <h3>Operations Staff</h3>
+            <p><strong>Logistics Coordination:</strong> Coordinate delivery logistics, including scheduling and routes.</p>
+            <p><strong>Inventory Management:</strong> Ensure delivery supplies are available as needed.</p>
+            <p><strong>Process Improvement:</strong> Improve delivery processes and efficiency.</p>
+        </div>
+        <div id="marketing-sales" class="section">
+            <h3>Marketing & Sales Staff</h3>
+            <p><strong>Promotional Campaigns:</strong> Develop and implement promotional campaigns to attract customers.</p>
+            <p><strong>Market Research:</strong> Conduct market research to understand customer preferences and trends.</p>
+            <p><strong>Community Engagement:</strong> Engage with the local community to promote the service.</p>
+        </div>
+        <div id="it-support" class="section">
+            <h3>IT & Technical Support</h3>
+            <p><strong>System Maintenance:</strong> Maintain the technology infrastructure of the platform.</p>
+            <p><strong>Technical Support:</strong> Provide technical support to employees and customers.</p>
+            <p><strong>Software Development:</strong> Work on enhancing the platform and improving user experience.</p>
+        </div>
+        <div id="quality-assurance" class="section">
+            <h3>Quality Assurance</h3>
+            <p><strong>Service Quality Monitoring:</strong> Monitor service quality provided by drivers and restaurants.</p>
+            <p><strong>Feedback Analysis:</strong> Analyze customer feedback and performance metrics for improvement.</p>
+            <p><strong>Training and Standards:</strong> Help develop training programs and service standards.</p>
+        </div>
+        <div id="finance-accounting" class="section">
+            <h3>Finance & Accounting</h3>
+            <p><strong>Financial Management:</strong> Manage budgeting, accounting, and payroll.</p>
+            <p><strong>Transaction Oversight:</strong> Oversee payment processing, ensuring security and accuracy.</p>
+            <p><strong>Reporting:</strong> Prepare financial reports to assess the health of the business.</p>
+        </div>
+    </div>
+    <script src="employee_dashboard.js"></script>
+</body>
+</html>
