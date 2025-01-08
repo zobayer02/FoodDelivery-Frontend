@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+            <form id="signup-form" action="signup.php" method="POST">
+
+
+                <div class="input-container">
+                    <input type="text" id="first_name" placeholder="First Name" required>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="last_name" placeholder="Last Name" required>
+                </div>
+                <div class="input-container">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="phone_number" placeholder="Phone Number" required>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="eye-icon" id="toggle-password">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="confirm-password" placeholder="Rewrite Password" required>
+                    <span id="password-check" class="password-check"></span>
+                </div>
+                <button type="submit" class="signup-btn">Submit</button>
+            </form>
+            <div class="social-icons">
+                <img src="image.png/transparent 2.png" alt="Google" class="social-icon">
+                <img src="image.png/transparent 1.png" alt="Microsoft" class="social-icon">
+                <img src="image.png/transparent 3.png" alt="Facebook" class="social-icon">
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
