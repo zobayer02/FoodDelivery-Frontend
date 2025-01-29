@@ -1,0 +1,129 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    background-color: #f4f6f9;
+    height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #2f3b52;
+    color: #fff;
+    padding: 30px 20px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #e2e2e2;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: #c1c1c1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1f2a38;
+    padding-left: 15px;
+}
+
+/* Content styling */
+.content {
+    margin-left: 250px;
+    padding: 40px;
+    overflow-y: auto;
+    flex-grow: 1;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    color: #333;
+}
+
+/* Section styling */
+.section {
+    display: none;
+    padding: 20px;
+    background-color: #f9fafb;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+    font-size: 1.6rem;
+    color: #2f3b52;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Active section styling */
+.active {
+    display: block;
+}
+
+/* Hover effects for section titles */
+.section h3:hover {
+    color: #1f2a38;
+    cursor: pointer;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Smooth transitions */
+section {
+    transition: all 0.3s ease-in-out;
+}
